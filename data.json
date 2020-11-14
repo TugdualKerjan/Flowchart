@@ -1,0 +1,96 @@
+{
+	"menu": {
+		"Problèmes informatiques": {
+			"Hardware (ordi cassé), chargeurs oubliés": {
+				"Poséidon": "a"
+			},
+			"Softwares (connexion, installer logiciels)": {
+				"1234@epfl.ch": "a"
+			},
+			"Trop de plateformes différentes": "a",
+			"Difficulté à installer des logiciels sans aide en présentiel (type catia ou machine virtuelle)": {
+				"1234@epfl.ch": "a"
+			},
+			"Bugs avec Zoom": "a",
+			"Inscrptions aux cours pas clair": "a",
+			"Infos sur la rentrée pas clair (ou arrive trop tard)": "a"
+		},
+		"Problèmes financiers": {
+			"Loyer": "a",
+			"Besoin de thune": {
+				"Bourse EPFL (go.epfl.ch/bourses-soutien)": "a"
+			},
+			"Rechercher/création de compte chez une banque": "a",
+			"Trouver abonnement téléphone": "a"
+		},
+		"Problèmes bureaucratiques": {
+			"Visa?": "a",
+			"Assurances": "a",
+			"C’est quoi le permis B?": {
+				"Service aux habitants, Office de la population (inscription à la commune)": "a"
+			},
+			"J’ai pas de habitation": {
+				"logement@epfl.ch": "a",
+				"unil-epfl-logement.ch": "a",
+				"https://www.epfl.ch/campus/services/housing/": "a"
+			}
+		},
+		"Problèmes académiques": {
+			"Inscription au cours / EPFL fucked": {
+				"services.etudiants@epfl.ch": "a"
+			},
+			"Difficulté de transition aux cours en ligne (+ qualité des cours)": {
+				"Délégués, SAC, DAF": "a",
+				"Techniques": {
+					"1234@epfl.ch": "a"
+				}
+			},
+			"Séries d’exos en ligne compliqués": {
+				"Délégués": "a"
+			},
+			"Baisse de productivité": {
+				"Santé": "a"
+			},
+			"Certains profs font 100% en ligne": "a",
+			"Difficile de se discipliner tout seul, pas de motiv": "a",
+			"Francais/Anglais des profs pas compréhensible": "a",
+			"Demande de tiers-temps ou amenagements speciaux pour examens": "a",
+			"Pas assez d’assistants": {
+				"Delegues": "a"
+			},
+			"Quels livres acheter?": {
+				"Coachs": "a"
+			},
+			"Assistants pas assez équipés pour expliquer": "a"
+		},
+		"Problèmes personnelles": {
+			"Prévention": {
+				"Dépression :(": {
+					"go.epfl.ch/gerer-son-stress": "a",
+					"prevention@agepoly.ch": "a"
+				},
+				"Pas de potes": {
+					"contact@coaching machin": "a",
+					"sports@epfl.ch": "a",
+					"ESN (pour ceux en échange)": "a"
+				}
+			},
+			"Santé / Aie": {
+				"Manque de muscles/surplus de poids": {
+					"sports@unil.ch": "a"
+				},
+				"Point santé": {
+					"pointsante@epfl.ch": "a"
+				},
+				"services.etudiants@epfl.ch": "a"
+			},
+			"Services": {
+				"Assurances": "a"
+			},
+			"Perdu à l’EPFL (où je vais?)": {
+				"plan.epfl.ch/appli": "a"
+			},
+			"Problèmes de santé": "A"
+		}
+	}
+}
