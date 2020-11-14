@@ -3,52 +3,55 @@
 import telegram
 from telegram import Update
 
-from . import ui, mytelegram
+from . import ui
 
 # === HELPERS ===
 
-def edit_message_text(update: Update, message, markup) -> None:
-    query = update.callback_query
-    query.answer()
-    query.edit_message_text(
-        text=message,
+
+def edit_message_text(update: Update, message: str, markup) -> None:
+    # query = update.callback_query
+    # query.answer()
+    print(type(message))
+    update.callback_query.edit_message_text(
+        text="message",
         reply_markup=markup,
         parse_mode=telegram.ParseMode.MARKDOWN)
 
     return
 
 
-def distribute_callback(update, context):
-    query = update.callback_query
-    query.answer()
-    data = query.data
+def distribute_callback(update: Update, context):
+    # query = update.callback_query
+    # query.answer()
 
-    stacktrace = data.split(" ")
+    stacktrace = update.callback_query.data.split(" ")
 
-    if stacktrace[0] in ui.special:
-        pair = handle_special_callback(
-            stacktrace, id_telegram, update, context)
-        if pair is None:
-            return
-        keyboard = pair[0]
-        message = pair[1]
-    else:
-        keyboard = ui.build_keyboard_with_origin(stacktrace, ui.menus_layout[stacktrace[0]])
-        message = ui.message(stacktrace[0]) #rename
+    # if stacktrace[0] in ui.special:
+    #     pair = handle_special_callback(
+    #         stacktrace, id_telegram, update, context)
+    #     if pair is None:
+    #         return
+    #     keyboard = pair[0]
+    #     message = pair[1]
+    # else:
+    keyboard = ui.build_keyboard_with_origin(stacktrace)
+    message = stacktrace[0]  # rename
+    print(str(type(message)) + " " + message)
     edit_message_text(update, message, keyboard)
 
     return
 
-def handle_special_callback(stacktrace: list, id_telegram, update, context):
-    keyboard = None
-    message = None
 
-    val = stacktrace[0]
+# def handle_special_callback(stacktrace: list, id_telegram, update, context):
+#     keyboard = None
+#     message = None
 
-    if val in ui.message_on_cloud:
-        message = ui.message(stacktrace[0])
-        keyboard = ui.build_keyboard_only_back(stacktrace)
+#     val = stacktrace[0]
 
-    if message is None:
-        message = ui.message(stacktrace[0])
-    return keyboard, message
+#     if val in ui.message_on_cloud:
+#         message = ui.message(stacktrace[0])
+#         keyboard = ui.build_keyboard_only_back(stacktrace)
+
+#     if message is None:
+#         message = ui.message(stacktrace[0])
+#     return keyboard, message
