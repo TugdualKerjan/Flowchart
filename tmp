@@ -1,0 +1,32 @@
+{
+    'update_id': 977520100, 'callback_query': {
+        'id': '2827870719610898017', 'chat_instance': '2277101062386520617', 'message': {
+            'message_id': 847, 'date': 1605016729, 'chat': {
+                'id': 658414959, 'type': 'private', 'username': 'eliorpap', 'first_name': 'Elior', 'last_name': 'Papiernik'
+            },
+            'edit_date': 1605016953, 'text': 'nonono', 'entities': [
+                {
+                    'type': 'bold', 'offset': 0, 'length': 6
+                }
+            ],
+            'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {
+                'inline_keyboard': [
+                    [{
+                        'text': 'Find a Buddy!', 'callback_data': 'search'
+                    }],
+                    [{
+                        'text': 'Help message', 'callback_data': 'help'
+                    }],
+                    [{
+                        'text': 'Unregister', 'callback_data': 'unregister'
+                    }]
+                ]},
+                'from': {
+                    'id': 1306292495, 'first_name': 'PapiernikBot', 'is_bot': True, 'username': 'PapiernikBot'
+                }
+            },
+            'data': 'search', 'from': {
+                'id': 658414959, 'first_name': 'Elior', 'is_bot': False, 'last_name': 'Papiernik', 'username': 'eliorpap', 'language_code': 'fr'
+            }
+        }
+    }
