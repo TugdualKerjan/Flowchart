@@ -1,0 +1,45 @@
+.choice {
+  /* position: absolute; */
+  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  /* align-content: center; */
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 200%;
+  border-radius: 3px;
+  margin: 10px 30%;
+  padding: 1em;
+  text-align: center;
+}
+
+.a {
+  background: red;
+  color: white;
+  border: 4px solid red;
+  transition: 0.3s;
+}
+
+.b {
+  background: lightgray;
+  color: gray;
+  border: 4px solid lightgray;
+}
+
+.a:hover {
+  background: white;
+  color: red;
+}
+
+.b:hover {
+    background: white;
+    /* color: white; */
+  }
+
+
